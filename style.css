@@ -1,0 +1,281 @@
+/* === RESET Y FUENTE === */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: radial-gradient(circle at center, #007744 0%, #004d33 100%);
+  height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.encabezado {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 140px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  pointer-events: none; /* permite que el usuario interactúe con elementos debajo si no hay botones aquí */
+}
+
+.carta-header {
+  background: linear-gradient(135deg, #f6e27a, #c89d28);
+  border: 4px solid #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  border-radius: 16px;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #222;
+  pointer-events: auto; /* permite hacer clic si lo necesitas */
+  max-width: 600px;
+  width: 90%;
+  transform: rotate(-1.5deg);
+}
+
+.carta-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0 #ccc;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: #333;
+  opacity: 0.85;
+}
+
+#botones-derecha {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+#botones-derecha button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #004d33;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: background 0.3s ease;
+}
+
+#botones-derecha button:hover {
+  background: #007744;
+}
+
+#ayuda, #info-desarrolladora {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  width: 280px;
+  background: rgba(0, 77, 51, 0.9);
+  color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  font-family: 'Georgia', serif;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+.oculto {
+  display: none;
+}
+
+/* === CONTADOR === */
+#contador {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;       /* Cambiado de 50% a 1rem para alinearlo a la izquierda */
+  transform: none;  /* Quitar el translateX para que no se mueva */
+  color: white;
+  font-size: 1.2rem;
+  z-index: 1000;
+  font-family: 'Georgia', serif;
+}
+
+/* === MESA Y ZONAS === */
+.mesa {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ width: calc(100vw - 4rem);
+  height: calc(100vh - 4rem);
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.mazo,
+.zona-centro {
+  position: relative;
+  width: 300px;
+  height: 420px;
+}
+
+.zona-centro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === CARTAS EN MAZO === */
+.mazo .card-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform:
+    translateY(calc(var(--offset, 0) * 4px))
+    scale(calc(1 - var(--offset, 0) * 0.01));
+  z-index: calc(100 - var(--offset, 0));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 calc(var(--offset, 0) * 2px) calc(var(--offset, 0) * 4px) rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* === CARTA EN CENTRO === */
+#zona-centro .card-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: none;
+  z-index: 1000;
+}
+
+/* === ANIMACIÓN DE ENTRADA === */
+.card-container.animacion-entrada {
+  animation: levantar 0.4s ease-out forwards;
+}
+
+@keyframes levantar {
+  0% {
+    transform: translateY(30px) scale(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* === REINICIAR BOTÓN === */
+#reiniciar {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  background: #fff;
+  color: #004d33;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.reiniciar.oculto {
+  display: none;
+}
+
+/* === ESTRUCTURA DE LA CARTA === */
+.card-container {
+  width: 300px;
+  height: 420px;
+  perspective: 1000px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-container.active .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 4px solid #fff;
+  background-color: #fafafa;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.card-back h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-back p {
+  font-size: 1rem;
+}
+
+.card-back .ejemplo-visual img {
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.card-container.animacion-salida {
+  animation: deslizar-a-derecha 0.6s ease forwards;
+}
+
+@keyframes deslizar-a-derecha {
+  0% {
+    transform: translateX(0) scale(1.1) rotateY(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(500px) scale(0.9) rotateY(180deg);
+    opacity: 0;
+  }
+}
