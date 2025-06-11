@@ -14,95 +14,95 @@ const cartas = [
     ejemploTexto: "Pantallas con más píxeles por pulgada se ven más nítidas."
   },
   {
-    nombre: "Accesibilidad",
+    nombre: "Interfaz Gráfica de Usuario (GUI)",
     ilustracion: "ilustracion-accesibilidad.svg",
-    definicion: "Diseño de interfaces que pueden ser utilizadas por personas con distintas capacidades.",
+    definicion: "Zona media que permite a los usuarios interactuar con dispositivos mediante elementos gráficos.",
     ejemploImg: "ejemplo-accesibilidad.svg",
-    ejemploTexto: "Un sitio con navegación por teclado y alto contraste."
+    ejemploTexto: "Windows o macOS."
   },
   {
-    nombre: "Píxel",
+    nombre: "Metáfora del escritorio",
     ilustracion: "ilustracion-pixel.svg",
-    definicion: "Unidad más pequeña de una imagen digital; representa un punto de color.",
+    definicion: "Metáfora empleada que simula un escritorio en el computador para facilidad del usuario.",
     ejemploImg: "ejemplo-pixel.svg",
-    ejemploTexto: "Pantallas con más píxeles por pulgada se ven más nítidas."
+    ejemploTexto: "Las carpetas, archivos y la forma en la que está organizada la pantalla."
   },
   {
-    nombre: "Accesibilidad",
+    nombre: "Responsive Design",
     ilustracion: "ilustracion-accesibilidad.svg",
-    definicion: "Diseño de interfaces que pueden ser utilizadas por personas con distintas capacidades.",
+    definicion: "Diseño que adapta contenido a distintos tamaños de pantalla.",
     ejemploImg: "ejemplo-accesibilidad.svg",
-    ejemploTexto: "Un sitio con navegación por teclado y alto contraste."
+    ejemploTexto: "Sitio de Amazon que se ajusta a cualquier dispositivo."
   },
   {
-    nombre: "Píxel",
+    nombre: "Skeumorfismo",
     ilustracion: "ilustracion-pixel.svg",
-    definicion: "Unidad más pequeña de una imagen digital; representa un punto de color.",
+    definicion: "Diseño que imita objetos reales.",
     ejemploImg: "ejemplo-pixel.svg",
-    ejemploTexto: "Pantallas con más píxeles por pulgada se ven más nítidas."
+    ejemploTexto: "Antiguo iOS con iconos de vidrio y relieves.."
   },
   {
-    nombre: "Accesibilidad",
+    nombre: "User Experience (UX)",
     ilustracion: "ilustracion-accesibilidad.svg",
-    definicion: "Diseño de interfaces que pueden ser utilizadas por personas con distintas capacidades.",
+    definicion: "Experiencia global del usuario al interactuar con un producto/servicio.",
     ejemploImg: "ejemplo-accesibilidad.svg",
-    ejemploTexto: "Un sitio con navegación por teclado y alto contraste."
+    ejemploTexto: "Navegar por Netflix para ver películas."
   },
   {
-    nombre: "Píxel",
+    nombre: "SEO (Search Engine Optimization)",
     ilustracion: "ilustracion-pixel.svg",
-    definicion: "Unidad más pequeña de una imagen digital; representa un punto de color.",
+    definicion: "Técnicas para mejorar visibilidad en buscadores orgánicos.",
     ejemploImg: "ejemplo-pixel.svg",
-    ejemploTexto: "Pantallas con más píxeles por pulgada se ven más nítidas."
+    ejemploTexto: "Uso de palabras claves, etiquetas en imágenes."
   },
   {
-    nombre: "Accesibilidad",
+    nombre: "Metáfora Digital",
     ilustracion: "ilustracion-accesibilidad.svg",
-    definicion: "Diseño de interfaces que pueden ser utilizadas por personas con distintas capacidades.",
+    definicion: "Uso de símbolos del mundo real para representar funciones digitales.",
     ejemploImg: "ejemplo-accesibilidad.svg",
-    ejemploTexto: "Un sitio con navegación por teclado y alto contraste."
+    ejemploTexto: "Icono de 'papelera' para eliminar archivos."
   },
   {
-    nombre: "Píxel",
+    nombre: "Gamificación",
     ilustracion: "ilustracion-pixel.svg",
-    definicion: "Unidad más pequeña de una imagen digital; representa un punto de color.",
+    definicion: "Uso de mecánicas de juego (recompensas, niveles) en contextos no lúdicos.",
     ejemploImg: "ejemplo-pixel.svg",
-    ejemploTexto: "Pantallas con más píxeles por pulgada se ven más nítidas."
+    ejemploTexto: "Duolingo con puntos por aprender idiomas."
   },
   {
-    nombre: "Accesibilidad",
+    nombre: "WCAG 2.0",
     ilustracion: "ilustracion-accesibilidad.svg",
-    definicion: "Diseño de interfaces que pueden ser utilizadas por personas con distintas capacidades.",
+    definicion: "Pautas para hacer contenido web accesible (niveles A, AA, AAA).",
     ejemploImg: "ejemplo-accesibilidad.svg",
-    ejemploTexto: "Un sitio con navegación por teclado y alto contraste."
+    ejemploTexto: "Texto con alto contraste para daltonismo."
   },
   {
-    nombre: "Píxel",
+    nombre: "Modelo RGB",
     ilustracion: "ilustracion-pixel.svg",
-    definicion: "Unidad más pequeña de una imagen digital; representa un punto de color.",
+    definicion: "Sistema de colores basado en luz (Rojo, Verde, Azul) para pantallas digitales.",
     ejemploImg: "ejemplo-pixel.svg",
-    ejemploTexto: "Pantallas con más píxeles por pulgada se ven más nítidas."
+    ejemploTexto: "Pantallas OLED que mezclan estos colores."
   },
     {
-    nombre: "Píxel",
+    nombre: "Usabilidad",
     ilustracion: "ilustracion-pixel.svg",
-    definicion: "Unidad más pequeña de una imagen digital; representa un punto de color.",
+    definicion: "Facilidad con que usuarios logran objetivos en un sistema.",
     ejemploImg: "ejemplo-pixel.svg",
-    ejemploTexto: "Pantallas con más píxeles por pulgada se ven más nítidas."
+    ejemploTexto: "Formulario de contacto simple en un sitio web."
   },
   {
-    nombre: "Accesibilidad",
+    nombre: "Comunicación Visual",
     ilustracion: "ilustracion-accesibilidad.svg",
-    definicion: "Diseño de interfaces que pueden ser utilizadas por personas con distintas capacidades.",
+    definicion: "Todo elemento visual que es importante en el proceso comunicativo.",
     ejemploImg: "ejemplo-accesibilidad.svg",
-    ejemploTexto: "Un sitio con navegación por teclado y alto contraste."
+    ejemploTexto: "Fotografías, formas, ilustraciones, tipografía, colores, etc"
   },
   {
-    nombre: "Píxel",
+    nombre: "Síntesis gráfica",
     ilustracion: "ilustracion-pixel.svg",
-    definicion: "Unidad más pequeña de una imagen digital; representa un punto de color.",
+    definicion: "Busca el reducir los elementos visuales de un objeto y dejar solo lo escencial para sea reconocido.",
     ejemploImg: "ejemplo-pixel.svg",
-    ejemploTexto: "Pantallas con más píxeles por pulgada se ven más nítidas."
+    ejemploTexto: "Íconos"
   }
 ];
 const btnAyuda = document.getElementById('btn-ayuda');
@@ -131,7 +131,6 @@ btnDesarrolladora.addEventListener('click', () => {
 });
 
 btnMapa.addEventListener('click', () => {
-  // Cambia 'mapa.html' por la URL de tu mapa mental
   window.location.href = 'mapa.html';
 });
 

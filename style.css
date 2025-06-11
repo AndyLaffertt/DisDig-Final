@@ -52,8 +52,8 @@ body {
 
 #botones-derecha {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 2rem;
+  right: 3rem;
   display: flex;
   gap: 0.5rem;
   z-index: 1000;

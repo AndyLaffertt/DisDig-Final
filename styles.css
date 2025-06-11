@@ -1,0 +1,220 @@
+:root {
+            --history-color: #FF9F1C;
+            --design-color: #2EC4B6;
+            --tech-color: #E71D36;
+            --theory-color: #662E9B;
+            --ui-color: #F46036;
+            --bg-color: #1A1A2E;
+            --card-bg: #16213E;
+            --text-color: #F0F0F0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0F3460, #1A1A2E);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #FF9F1C, #2EC4B6, #E71D36);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            display: flex;
+            min-height: calc(100vh - 200px);
+        }
+        
+        #concept-map {
+            flex: 3;
+            position: relative;
+            min-height: 600px;
+            overflow: hidden;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%2316213E"/><path d="M0 0L100 100M100 0L0 100" stroke="%231A1A2E" stroke-width="0.5"/></svg>');
+            background-size: 20px 20px;
+        }
+        
+        #info-panel {
+            flex: 1;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 400px;
+            overflow-y: auto;
+        }
+        
+        .concept-node {
+            position: absolute;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            text-align: center;
+            min-width: 150px;
+            z-index: 10;
+            transform: translate(-50%, -50%);
+        }
+        
+        .concept-node:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+            z-index: 100;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .concept-node.history { background-color: var(--history-color); }
+        .concept-node.design { background-color: var(--design-color); }
+        .concept-node.tech { background-color: var(--tech-color); }
+        .concept-node.theory { background-color: var(--theory-color); }
+        .concept-node.ui { background-color: var(--ui-color); }
+        
+        .connection {
+            position: absolute;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.3);
+            transform-origin: 0 0;
+            z-index: 1;
+        }
+        
+        .connection.highlight {
+            background: white;
+            height: 3px;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+        }
+        
+        .info-card {
+            background-color: rgba(26, 34, 57, 0.8);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .info-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid;
+        }
+        
+        .history h2 { border-bottom-color: var(--history-color); }
+        .design h2 { border-bottom-color: var(--design-color); }
+        .tech h2 { border-bottom-color: var(--tech-color); }
+        .theory h2 { border-bottom-color: var(--theory-color); }
+        .ui h2 { border-bottom-color: var(--ui-color); }
+        
+        .examples {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed rgba(255, 255, 255, 0.2);
+        }
+        
+        .example-item {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.8rem;
+            border-radius: 8px;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .related-concepts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .related-concept {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .related-concept:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .history .related-concept { background: rgba(255, 159, 28, 0.2); }
+        .design .related-concept { background: rgba(46, 196, 182, 0.2); }
+        .tech .related-concept { background: rgba(231, 29, 54, 0.2); }
+        .theory .related-concept { background: rgba(102, 46, 155, 0.2); }
+        .ui .related-concept { background: rgba(244, 96, 54, 0.2); }
+        
+        .search-container {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        #search-input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: 30px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            padding-left: 40px;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            opacity: 0.7;
+        }
+        
+        .empty-state h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            #info-panel {
+                max-width: 100%;
+                border-left: none;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
