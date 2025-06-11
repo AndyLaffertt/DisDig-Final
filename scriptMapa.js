@@ -6,7 +6,7 @@ const concepts = {
                 description: "Proceso de simplificación visual que reduce elementos complejos a formas esenciales manteniendo su significado.",
                 examples: ["Icono de 'guardar' como disquete", "Emojis que representan emociones"],
                 relations: ["iconos", "pixel-art", "proyecto-isotype", "susan-kare"],
-                position: {x: 25, y: 54}
+                position: {x: 35, y: 72}
             },
             "iconos": {
                 id: "iconos",
@@ -15,7 +15,7 @@ const concepts = {
                 description: "Representaciones visuales simplificadas que comunican funciones o conceptos en interfaces digitales.",
                 examples: ["Iconos de carpetas en sistemas operativos", "Botones de redes sociales"],
                 relations: ["sintesis-grafica", "interfaces-graficas", "metáfora-escritorio", "susan-kare", "kiss"],
-                position: {x: 40, y: 35}
+                position: {x: 52, y: 23}
             },
             "interfaces-graficas": {
                 id: "interfaces-graficas",
@@ -24,7 +24,7 @@ const concepts = {
                 description: "Sistemas de interacción que utilizan elementos visuales como ventanas, iconos y menús.",
                 examples: ["Windows 95", "macOS Finder"],
                 relations: ["iconos", "metáfora-escritorio", "xerox-alto", "computer-as-theatre", "usabilidad"],
-                position: {x: 60, y: 25}
+                position: {x: 70, y: 22}
             },
             "metáfora-escritorio": {
                 id: "metáfora-escritorio",
@@ -33,7 +33,7 @@ const concepts = {
                 description: "Analogía que trata la pantalla como un escritorio físico con documentos y carpetas.",
                 examples: ["Papelera de reciclaje", "Carpetas de archivos"],
                 relations: ["interfaces-graficas", "xerox-alto", "apple-lisa", "susan-kare", "paradigma-papel"],
-                position: {x: 60, y: 45}
+                position: {x: 75, y: 47}
             },
             "susan-kare": {
                 id: "susan-kare",
@@ -42,7 +42,7 @@ const concepts = {
                 description: "Diseñadora pionera que humanizó las interfaces con iconos memorables para el Macintosh original.",
                 examples: ["Icono 'Mac sonriente'", "Reloj de arena de espera"],
                 relations: ["iconos", "pixel-art", "computer-as-theatre", "metáfora-escritorio"],
-                position: {x: 40, y: 60}
+                position: {x: 55, y: 60}
             },
             "computer-as-theatre": {
                 id: "computer-as-theatre",
@@ -51,7 +51,7 @@ const concepts = {
                 description: "Teoría de Brenda Laurel que compara la interacción computacional con una experiencia teatral emocional.",
                 examples: ["Videojuegos narrativos", "Interfaces con storytelling"],
                 relations: ["susan-kare", "interfaces-graficas", "experiencia-usuario", "narrativas-digitales"],
-                position: {x: 75, y: 60}
+                position: {x: 75, y: 35}
             },
             "proyecto-isotype": {
                 id: "proyecto-isotype",
@@ -60,7 +60,7 @@ const concepts = {
                 description: "Sistema de símbolos visuales creado en 1920 para comunicación universal, precursor de los iconos modernos.",
                 examples: ["Pictogramas de aeropuertos", "Símbolos de seguridad"],
                 relations: ["sintesis-grafica", "iconos"],
-                position: {x: 10, y: 30}
+                position: {x: 24, y: 57} //
             },
             "xerox-alto": {
                 id: "xerox-alto",
@@ -69,7 +69,7 @@ const concepts = {
                 description: "Primera computadora con interfaz gráfica y mouse, desarrollada en 1973.",
                 examples: ["Primera implementación de ventanas superpuestas", "Uso del ratón como dispositivo apuntador"],
                 relations: ["interfaces-graficas", "metáfora-escritorio"],
-                position: {x: 75, y: 10}
+                position: {x: 92, y: 10}
             },
             "pixel-art": {
                 id: "pixel-art",
@@ -78,7 +78,7 @@ const concepts = {
                 description: "Técnica de creación gráfica a nivel de píxel, fundamental en los primeros iconos e interfaces.",
                 examples: ["Iconos de Macintosh original", "Juegos retro como Super Mario Bros"],
                 relations: ["sintesis-grafica", "susan-kare"],
-                position: {x: 25, y: 75}
+                position: {x: 55, y: 72}
             },
             "kiss": {
                 id: "kiss",
@@ -87,7 +87,7 @@ const concepts = {
                 description: "Keep It Simple, Stupid! - Filosofía de diseño que prioriza la simplicidad y eliminación de complejidad innecesaria.",
                 examples: ["Iconos minimalistas", "Interfaces limpias sin elementos superfluos"],
                 relations: ["iconos", "sintesis-grafica", "usabilidad"],
-                position: {x: 15, y: 65}
+                position: {x: 40, y: 58} //{x: 35, y: 69}
             },
             "paradigma-papel": {
                 id: "paradigma-papel",
@@ -96,7 +96,7 @@ const concepts = {
                 description: "Enfoque de diseño que imita documentos físicos con texto negro sobre fondo blanco.",
                 examples: ["Interfaces de procesadores de texto", "Lectores de PDF digitales"],
                 relations: ["metáfora-escritorio"],
-                position: {x: 80, y: 40}
+                position: {x: 92, y: 25}
             },
             "usabilidad": {
                 id: "usabilidad",
@@ -105,7 +105,7 @@ const concepts = {
                 description: "Calidad que mide qué tan fácil de usar es una interfaz para los usuarios.",
                 examples: ["Formularios con validación en tiempo real", "Menús intuitivos"],
                 relations: ["interfaces-graficas", "kiss", "accesibilidad"],
-                position: {x: 85, y: 70}
+                position: {x: 89, y: 63}
             },
             "experiencia-usuario": {
                 id: "experiencia-usuario",
@@ -114,272 +114,299 @@ const concepts = {
                 description: "Percepción y respuesta de una persona al usar un producto, sistema o servicio.",
                 examples: ["Flujo intuitivo de compra en e-commerce", "Apps con animaciones satisfactorias"],
                 relations: ["computer-as-theatre", "usabilidad"],
-                position: {x: 90, y: 55}
+                position: {x: 92, y: 45}
             },
             "emocion-ux": {
-    id: "emocion-ux",
-    name: "Emoción en UX",
-    category: "theory",
-    description: "Estudia cómo las emociones influyen en la experiencia del usuario al interactuar con un producto digital.",
-    examples: ["Interfaces que inspiran alegría o sorpresa", "Diseños que evocan nostalgia"],
-    relations: ["computer-as-theatre", "narrativas-digitales"],
-    position: {x: 78, y: 65}
-},
-"narrativas-digitales": {
-    id: "narrativas-digitales",
-    name: "Narrativas Digitales",
-    category: "theory",
-    description: "Uso de la narrativa como herramienta de diseño para guiar al usuario y mejorar su experiencia.",
-    examples: ["Storytelling en videojuegos", "Tutoriales interactivos"],
-    relations: ["emocion-ux", "videojuegos"],
-    position: {x: 80, y: 70}
-},
-"videojuegos": {
-    id: "videojuegos",
-    name: "Videojuegos",
-    category: "tech",
-    description: "Medio interactivo que combina diseño gráfico, narración y experiencia de usuario.",
-    examples: ["Super Mario Bros", "Journey"],
-    relations: ["narrativas-digitales", "gamificacion"],
-    position: {x: 82, y: 75}
-},
-"gamificacion": {
-    id: "gamificacion",
-    name: "Gamificación",
-    category: "theory",
-    description: "Aplicación de elementos de juego en contextos no lúdicos para motivar la participación.",
-    examples: ["Sistemas de puntos y recompensas", "Progresos visuales en apps"],
-    relations: ["videojuegos"],
-    position: {x: 85, y: 78}
-},
-"resolucion": {
-    id: "resolucion",
-    name: "Resolución",
-    category: "tech",
-    description: "Cantidad de píxeles que puede mostrar una pantalla o imagen digital.",
-    examples: ["1920x1080", "Retina Display"],
-    relations: ["pixel-art", "formatos-imagen"],
-    position: {x: 30, y: 80}
-},
-"formatos-imagen": {
-    id: "formatos-imagen",
-    name: "Formatos Imagen",
-    category: "tech",
-    description: "Tipos de archivo que almacenan imágenes digitales con distintas propiedades de compresión y color.",
-    examples: ["PNG", "JPEG", "SVG"],
-    relations: ["resolucion", "modelo-rgb"],
-    position: {x: 35, y: 82}
-},
-"modelo-rgb": {
-    id: "modelo-rgb",
-    name: "Modelo RGB",
-    category: "tech",
-    description: "Sistema de representación del color basado en la combinación de Rojo, Verde y Azul.",
-    examples: ["Pantallas LED", "Edición de imágenes digitales"],
-    relations: ["formatos-imagen"],
-    position: {x: 38, y: 85}
-},
-"accesibilidad": {
-    id: "accesibilidad",
-    name: "Accesibilidad",
-    category: "ui",
-    description: "Capacidad de un sistema para ser usado por personas con distintas capacidades.",
-    examples: ["Lector de pantalla", "Contraste alto"],
-    relations: ["usabilidad", "wcag"],
-    position: {x: 88, y: 75}
-},
-"wcag": {
-    id: "wcag",
-    name: "WCAG 2.0",
-    category: "ui",
-    description: "Pautas para mejorar la accesibilidad de los sitios web para todos los usuarios.",
-    examples: ["Texto alternativo en imágenes", "Navegación con teclado"],
-    relations: ["accesibilidad"],
-    position: {x: 90, y: 78}
-},
-"diseno-inclusivo": {
-    id: "diseno-inclusivo",
-    name: "Diseño Inclusivo",
-    category: "theory",
-    description: "Diseño que considera una amplia gama de capacidades, edad, género, cultura y nivel de experiencia.",
-    examples: ["Interfaces adaptables", "Contenido multicultural"],
-    relations: ["accesibilidad"],
-    position: {x: 92, y: 75}
-},
-"evolucion-historica": {
-    id: "evolucion-historica",
-    name: "Evolución Histórica",
-    category: "history",
-    description: "Resumen de hitos clave en la historia del diseño digital y la computación.",
-    examples: ["Transición de la computación analógica a digital", "Nacimiento de las interfaces gráficas"],
-    relations: ["colossus", "arpa", "engelbart", "licklider"],
-    position: {x: 10, y: 8}
-},
-"colossus": {
-    id: "colossus",
-    name: "Colossus/ENIAC",
-    category: "history",
-    description: "Primeras computadoras electrónicas programables utilizadas durante y después de la Segunda Guerra Mundial.",
-    examples: ["Colossus (1943)", "ENIAC (1945)"],
-    relations: ["evolucion-historica"],
-    position: {x: 5, y: 15}
-},
-"arpa": {
-    id: "arpa",
-    name: "ARPA/Internet",
-    category: "history",
-    description: "Agencia estadounidense que desarrolló el precursor de Internet (ARPANET).",
-    examples: ["ARPANET en 1969", "Base de la red mundial"],
-    relations: ["evolucion-historica"],
-    position: {x: 18, y: 15}
-},
-"engelbart": {
-    id: "engelbart",
-    name: "Douglas Engelbart",
-    category: "history",
-    description: "Inventor del ratón y pionero en interacción humano-computadora.",
-    examples: ["The Mother of All Demos (1968)"],
-    relations: ["evolucion-historica"],
-    position: {x: 10, y: 23}
-},
-"licklider": {
-    id: "licklider",
-    name: "Licklider",
-    category: "history",
-    description: "Visión temprana sobre la simbiosis humano-computadora y predecesor de la Web.",
-    examples: ["Promovió ARPANET", "Inspiró la Web 2.0"],
-    relations: ["evolucion-historica", "web-2"],
-    position: {x: 15, y: 25}
-},
-"web-2": {
-    id: "web-2",
-    name: "Web 2.0",
-    category: "tech",
-    description: "Evolución de la web hacia una participación más activa del usuario y contenido colaborativo.",
-    examples: ["Redes sociales", "Blogs, wikis"],
-    relations: ["licklider", "redes-sociales"],
-    position: {x: 20, y: 30}
-},
-"principios-diseno": {
-    id: "principios-diseno",
-    name: "Principios de Diseño",
-    category: "design",
-    description: "Conjunto de reglas que guían el diseño visual y funcional.",
-    examples: ["Consistencia", "Jerarquía visual", "Contraste"],
-    relations: ["kiss", "consistencia", "espacio-blanco", "skeumorfismo"],
-    position: {x: 10, y: 50}
-},
-"consistencia": {
-    id: "consistencia",
-    name: "Consistencia",
-    category: "design",
-    description: "Uso coherente de elementos visuales y funcionales en una interfaz.",
-    examples: ["Mismos colores para botones con igual función"],
-    relations: ["principios-diseno"],
-    position: {x: 12, y: 55}
-},
-"espacio-blanco": {
-    id: "espacio-blanco",
-    name: "Espacio Blanco",
-    category: "design",
-    description: "Espacios vacíos intencionados que mejoran la legibilidad y jerarquía visual.",
-    examples: ["Márgenes entre bloques de texto", "Separación de secciones"],
-    relations: ["principios-diseno"],
-    position: {x: 8, y: 55}
-},
-"skeumorfismo": {
-    id: "skeumorfismo",
-    name: "Skeumorfismo",
-    category: "design",
-    description: "Estilo de diseño que imita objetos reales con texturas y sombras.",
-    examples: ["App de Notas con apariencia de libreta"],
-    relations: ["principios-diseno", "flat-design"],
-    position: {x: 10, y: 60}
-},
-"flat-design": {
-    id: "flat-design",
-    name: "Flat Design",
-    category: "design",
-    description: "Estilo minimalista que elimina detalles decorativos para enfocarse en la funcionalidad.",
-    examples: ["Diseños con colores planos y tipografía clara"],
-    relations: ["skeumorfismo", "neomorfismo"],
-    position: {x: 12, y: 65}
-},
-"neomorfismo": {
-    id: "neomorfismo",
-    name: "Neomorfismo",
-    category: "design",
-    description: "Estilo de diseño visual que combina elementos del skeumorfismo y el flat design con sombras suaves.",
-    examples: ["Botones que parecen embebidos en la superficie"],
-    relations: ["flat-design"],
-    position: {x: 14, y: 70}
-},
-"impacto-actual": {
-    id: "impacto-actual",
-    name: "Impacto Actual",
-    category: "theory",
-    description: "Influencia contemporánea del diseño digital en la sociedad, la economía y la cultura.",
-    examples: ["Diseño adaptativo", "IA en creación gráfica"],
-    relations: ["web-2", "responsive", "ia-diseno"],
-    position: {x: 25, y: 35}
-},
-"redes-sociales": {
-    id: "redes-sociales",
-    name: "Redes Sociales",
-    category: "tech",
-    description: "Plataformas que permiten compartir contenido y conectar usuarios a escala global.",
-    examples: ["Instagram, TikTok, X"],
-    relations: ["web-2", "marketing-contenido"],
-    position: {x: 30, y: 30}
-},
-"marketing-contenido": {
-    id: "marketing-contenido",
-    name: "Marketing de Contenidos",
-    category: "tech",
-    description: "Estrategia de crear contenido relevante para atraer y retener usuarios.",
-    examples: ["Blogs, videos, infografías"],
-    relations: ["redes-sociales"],
-    position: {x: 33, y: 28}
-},
-"responsive": {
-    id: "responsive",
-    name: "Responsive Design",
-    category: "tech",
-    description: "Técnica de diseño web que adapta el contenido a diferentes tamaños de pantalla.",
-    examples: ["Diseño adaptable en móvil y escritorio"],
-    relations: ["impacto-actual", "experiencia-movil"],
-    position: {x: 25, y: 40}
-},
-"experiencia-movil": {
-    id: "experiencia-movil",
-    name: "Experiencia Móvil",
-    category: "ui",
-    description: "Diseño optimizado para la interacción en dispositivos móviles.",
-    examples: ["Interfaces táctiles optimizadas", "Carga rápida en móviles"],
-    relations: ["responsive"],
-    position: {x: 27, y: 45}
-},
-"ia-diseno": {
-    id: "ia-diseno",
-    name: "IA en Diseño",
-    category: "tech",
-    description: "Uso de inteligencia artificial para asistir o automatizar procesos de diseño.",
-    examples: ["Generadores de logos", "Diseño asistido por IA"],
-    relations: ["impacto-actual", "automatizacion"],
-    position: {x: 28, y: 18}
-},
-"automatizacion": {
-    id: "automatizacion",
-    name: "Automatización",
-    category: "tech",
-    description: "Implementación de sistemas que ejecutan tareas de diseño sin intervención humana directa.",
-    examples: ["Auto-layout", "Sistemas generativos"],
-    relations: ["ia-diseno"],
-    position: {x: 30, y: 42}
-}
+                id: "emocion-ux",
+                name: "Emoción en UX",
+                category: "theory",
+                description: "Estudia cómo las emociones influyen en la experiencia del usuario al interactuar con un producto digital.",
+                examples: ["Interfaces que inspiran alegría o sorpresa", "Diseños que evocan nostalgia"],
+                relations: ["computer-as-theatre", "narrativas-digitales"],
+                position: {x: 74, y: 60}
+            },
+            "narrativas-digitales": {
+                id: "narrativas-digitales",
+                name: "Narrativas Digitales",
+                category: "theory",
+                description: "Uso de la narrativa como herramienta de diseño para guiar al usuario y mejorar su experiencia.",
+                examples: ["Storytelling en videojuegos", "Tutoriales interactivos"],
+                relations: ["emocion-ux", "videojuegos"],
+                position: {x: 73, y: 72} //{x: 55, y: 72}
+            },
+            "videojuegos": {
+                id: "videojuegos",
+                name: "Videojuegos",
+                category: "tech",
+                description: "Medio interactivo que combina diseño gráfico, narración y experiencia de usuario.",
+                examples: ["Super Mario Bros", "Journey"],
+                relations: ["narrativas-digitales", "gamificacion"],
+                position: {x: 79, y: 83} //{x: 63, y: 83}
+            },
+            "gamificacion": {
+                id: "gamificacion",
+                name: "Gamificación",
+                category: "theory",
+                description: "Aplicación de elementos de juego en contextos no lúdicos para motivar la participación.",
+                examples: ["Sistemas de puntos y recompensas", "Progresos visuales en apps"],
+                relations: ["videojuegos"],
+                position: {x: 63, y: 83}
+            },
+            "resolucion": {
+                id: "resolucion",
+                name: "Resolución",
+                category: "tech",
+                description: "Cantidad de píxeles que puede mostrar una pantalla o imagen digital.",
+                examples: ["1920x1080", "Retina Display"],
+                relations: ["pixel-art", "formatos-imagen"],
+                position: {x: 48, y: 84}
+            },
+            "formatos-imagen": {
+                id: "formatos-imagen",
+                name: "Formatos Imagen",
+                category: "tech",
+                description: "Tipos de archivo que almacenan imágenes digitales con distintas propiedades de compresión y color.",
+                examples: ["PNG", "JPEG", "SVG"],
+                relations: ["resolucion", "modelo-rgb"],
+                position: {x: 45, y: 95}
+            },
+            "modelo-rgb": {
+                id: "modelo-rgb",
+                name: "Modelo RGB",
+                category: "tech",
+                description: "Sistema de representación del color basado en la combinación de Rojo, Verde y Azul.",
+                examples: ["Pantallas LED", "Edición de imágenes digitales"],
+                relations: ["formatos-imagen"],
+                position: {x: 63, y: 95}
+            },
+            "accesibilidad": {
+                id: "accesibilidad",
+                name: "Accesibilidad",
+                category: "ui",
+                description: "Capacidad de un sistema para ser usado por personas con distintas capacidades.",
+                examples: ["Lector de pantalla", "Contraste alto"],
+                relations: ["usabilidad", "wcag"],
+                position: {x: 92, y: 75}
+            },
+            "wcag": {
+                id: "wcag",
+                name: "WCAG 2.0",
+                category: "ui",
+                description: "Pautas para mejorar la accesibilidad de los sitios web para todos los usuarios.",
+                examples: ["Texto alternativo en imágenes", "Navegación con teclado"],
+                relations: ["accesibilidad"],
+                position: {x: 77, y: 95}
+            },
+            "diseno-inclusivo": {
+                id: "diseno-inclusivo",
+                name: "Diseño Inclusivo",
+                category: "theory",
+                description: "Diseño que considera una amplia gama de capacidades, edad, género, cultura y nivel de experiencia.",
+                examples: ["Interfaces adaptables", "Contenido multicultural"],
+                relations: ["accesibilidad"],
+                position: {x: 92, y: 95}
+            },
+            "evolucion-historica": {
+                id: "evolucion-historica",
+                name: "Evolución Histórica",
+                category: "history",
+                description: "Resumen de hitos clave en la historia del diseño digital y la computación.",
+                examples: ["Transición de la computación analógica a digital", "Nacimiento de las interfaces gráficas"],
+                relations: ["colossus", "arpa", "engelbart", "licklider"],
+                position: {x: 20, y: 5}
+            },
+            "colossus": {
+                id: "colossus",
+                name: "Colossus/ENIAC",
+                category: "history",
+                description: "Primeras computadoras electrónicas programables utilizadas durante y después de la Segunda Guerra Mundial.",
+                examples: ["Colossus (1943)", "ENIAC (1945)"],
+                relations: ["evolucion-historica"],
+                position: {x: 8, y: 17}
+            },
+            "arpa": {
+                id: "arpa",
+                name: "ARPA/Internet",
+                category: "history",
+                description: "Agencia estadounidense que desarrolló el precursor de Internet (ARPANET).",
+                examples: ["ARPANET en 1969", "Base de la red mundial"],
+                relations: ["evolucion-historica"],
+                position: {x:40, y: 5}
+            },
+            "web-2": {
+                id: "web-2",
+                name: "Web 2.0",
+                category: "tech",
+                description: "Evolución de la web hacia una participación más activa del usuario y contenido colaborativo.",
+                examples: ["Redes sociales", "Blogs, wikis"],
+                relations: ["licklider", "redes-sociales", "impacto-actual"],
+                position: {x: 22, y: 24}
+            },
+            "licklider": {
+                id: "licklider",
+                name: "Licklider",
+                category: "history",
+                description: "Visión temprana sobre la simbiosis humano-computadora y predecesor de la Web.",
+                examples: ["Promovió ARPANET", "Inspiró la Web 2.0"],
+                relations: ["evolucion-historica", "web-2"],
+                position: {x: 8, y: 30}
+            },
+            "engelbart": {
+                id: "engelbart",
+                name: "Douglas Engelbart",
+                category: "history",
+                description: "Inventor del ratón y pionero en interacción humano-computadora.",
+                examples: ["The Mother of All Demos (1968)"],
+                relations: ["evolucion-historica"],
+                position: {x: 37, y: 16}
+            },
+            "principios-diseno": {
+                id: "principios-diseno",
+                name: "Principios de Diseño",
+                category: "design",
+                description: "Conjunto de reglas que guían el diseño visual y funcional.",
+                examples: ["Consistencia", "Jerarquía visual", "Contraste"],
+                relations: ["kiss", "consistencia", "espacio-blanco", "skeumorfismo"],
+                position: {x: 13, y: 70}
+            },
+            "consistencia": {
+                id: "consistencia",
+                name: "Consistencia",
+                category: "design",
+                description: "Uso coherente de elementos visuales y funcionales en una interfaz.",
+                examples: ["Mismos colores para botones con igual función"],
+                relations: ["principios-diseno"],
+                position: {x: 13, y: 83} //{x: 13, y: 70}
+            },
+            "espacio-blanco": {
+                id: "espacio-blanco",
+                name: "Espacio Blanco",
+                category: "design",
+                description: "Espacios vacíos intencionados que mejoran la legibilidad y jerarquía visual.",
+                examples: ["Márgenes entre bloques de texto", "Separación de secciones"],
+                relations: ["principios-diseno"],
+                position: {x: 8, y: 55}
+            },
+            "skeumorfismo": {
+                id: "skeumorfismo",
+                name: "Skeumorfismo",
+                category: "design",
+                description: "Estilo de diseño que imita objetos reales con texturas y sombras.",
+                examples: ["App de Notas con apariencia de libreta"],
+                relations: ["principios-diseno", "flat-design"],
+                position: {x: 32, y: 83} 
+            },
+            "flat-design": {
+                id: "flat-design",
+                name: "Flat Design",
+                category: "design",
+                description: "Estilo minimalista que elimina detalles decorativos para enfocarse en la funcionalidad.",
+                examples: ["Diseños con colores planos y tipografía clara"],
+                relations: ["skeumorfismo", "neomorfismo"],
+                position: {x: 10, y: 95}  //x: 26, y: 95
+            },
+            "neomorfismo": {
+                id: "neomorfismo",
+                name: "Neomorfismo",
+                category: "design",
+                description: "Estilo de diseño visual que combina elementos del skeumorfismo y el flat design con sombras suaves.",
+                examples: ["Botones que parecen embebidos en la superficie"],
+                relations: ["flat-design"],
+                position: {x: 26, y: 95}
+            },
+            "impacto-actual": {
+                id: "impacto-actual",
+                name: "Impacto Actual",
+                category: "theory",
+                description: "Influencia contemporánea del diseño digital en la sociedad, la economía y la cultura.",
+                examples: ["Diseño adaptativo", "IA en creación gráfica"],
+                relations: ["web-2", "responsive", "ia-diseno"],
+                position: {x: 58, y: 8}
+            },
+            "redes-sociales": {
+                id: "redes-sociales",
+                name: "Redes Sociales",
+                category: "tech",
+                description: "Plataformas que permiten compartir contenido y conectar usuarios a escala global.",
+                examples: ["Instagram, TikTok, X"],
+                relations: ["web-2", "marketing-contenido"],
+                position: {x: 30, y: 35}
+            },
+            "marketing-contenido": {
+                id: "marketing-contenido",
+                name: "Marketing de Contenidos",
+                category: "tech",
+                description: "Estrategia de crear contenido relevante para atraer y retener usuarios.",
+                examples: ["Blogs, videos, infografías"],
+                relations: ["redes-sociales"],
+                position: {x: 52, y: 35} //x: 50, y: 22
+            },
+            "responsive": {
+                id: "responsive",
+                name: "Responsive Design",
+                category: "tech",
+                description: "Técnica de diseño web que adapta el contenido a diferentes tamaños de pantalla.",
+                examples: ["Diseño adaptable en móvil y escritorio"],
+                relations: ["impacto-actual", "experiencia-movil"],
+                position: {x: 10, y: 43}
+            },
+            "experiencia-movil": {
+                id: "experiencia-movil",
+                name: "Experiencia Móvil",
+                category: "ui",
+                description: "Diseño optimizado para la interacción en dispositivos móviles.",
+                examples: ["Interfaces táctiles optimizadas", "Carga rápida en móviles"],
+                relations: ["responsive"],
+                position: {x: 33, y: 46}
+            },
+            "ia-diseno": {
+                id: "ia-diseno",
+                name: "IA en Diseño",
+                category: "tech",
+                description: "Uso de inteligencia artificial para asistir o automatizar procesos de diseño.",
+                examples: ["Generadores de logos", "Diseño asistido por IA"],
+                relations: ["impacto-actual", "automatizacion"],
+                position: {x: 76, y: 10}
+            },
+            "automatizacion": {
+                id: "automatizacion",
+                name: "Automatización",
+                category: "tech",
+                description: "Implementación de sistemas que ejecutan tareas de diseño sin intervención humana directa.",
+                examples: ["Auto-layout", "Sistemas generativos"],
+                relations: ["ia-diseno"],
+                position: {x: 53, y: 48}
+            }
 
         };
+const btnAyuda = document.getElementById('btn-ayuda');
+const btnDesarrolladora = document.getElementById('btn-desarrolladora');
+const btnMapa = document.getElementById('btn-visual');
+const ayuda = document.getElementById('ayuda');
+const infoDesarrolladora = document.getElementById('info-desarrolladora');
 
+// Función para ocultar todos los paneles menos el que quieres mostrar
+function togglePanel(panel) {
+  [ayuda, infoDesarrolladora].forEach(p => {
+    if (p === panel) {
+      p.classList.toggle('oculto');
+    } else {
+      p.classList.add('oculto');
+    }
+  });
+}
+
+btnAyuda.addEventListener('click', () => {
+  togglePanel(ayuda);
+});
+
+btnDesarrolladora.addEventListener('click', () => {
+  togglePanel(infoDesarrolladora);
+});
+
+btnMapa.addEventListener('click', () => {
+  window.location.href = 'index.html';
+});
         // Initialize the concept map
         document.addEventListener('DOMContentLoaded', () => {
             renderConceptMap();

@@ -65,7 +65,7 @@
             padding: 2rem;
             background-color: var(--card-bg);
             border-left: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 400px;
+            max-width: 325px;
             overflow-y: auto;
         }
         
@@ -78,7 +78,7 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
             text-align: center;
-            min-width: 150px;
+            min-width: 120px;
             z-index: 10;
             transform: translate(-50%, -50%);
         }
@@ -218,3 +218,50 @@
                 border-top: 1px solid rgba(255, 255, 255, 0.1);
             }
         }
+
+/*botones*/
+#botones-derecha {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+#botones-derecha button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #001b4d;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: background 0.3s ease;
+}
+
+#botones-derecha button:hover {
+  background: #343fa8;
+}
+
+#ayuda, #info-desarrolladora {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  width: 280px;
+  background: rgba(0, 31, 77, 0.9);
+  color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  font-family: 'Georgia', serif;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+.oculto {
+  display: none;
+}
