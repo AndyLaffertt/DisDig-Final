@@ -1,6 +1,6 @@
 /* Estructura general */
 body {
-  font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', serif;
   margin: 0;
   background: #F9F9F9;
   color: #2B2B2B;
@@ -98,7 +98,7 @@ p.subtitulo {
   height: auto;
   margin-right: 16px;
   border-radius: 8px;
-  flex-shrink: 0;
+  flex-shrink: 5;
   box-shadow: 0 0 6px rgba(0,0,0,0.1);
 }
 
@@ -146,4 +146,10 @@ footer {
   background: #264653;
   color: white;
   margin-top: 2rem;
+}
+.icono-card {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 1rem;
 }

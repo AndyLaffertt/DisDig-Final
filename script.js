@@ -110,6 +110,7 @@ const btnDesarrolladora = document.getElementById('btn-desarrolladora');
 const btnMapa = document.getElementById('btn-mapa');
 const ayuda = document.getElementById('ayuda');
 const infoDesarrolladora = document.getElementById('info-desarrolladora');
+const btnIndex = document.getElementById('btn-index');
 
 // Función para ocultar todos los paneles menos el que quieres mostrar
 function togglePanel(panel) {
@@ -132,6 +133,9 @@ btnDesarrolladora.addEventListener('click', () => {
 
 btnMapa.addEventListener('click', () => {
   window.location.href = 'mapa.html';
+});
+btnIndex.addEventListener('click', () => {
+  window.location.href = 'index.html';
 });
 
 const mazoInicial = document.getElementById('mazo-inicial');

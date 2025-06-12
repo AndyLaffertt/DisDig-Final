@@ -382,10 +382,11 @@ const concepts = {
 const btnAyuda = document.getElementById('btn-ayuda');
 const btnDesarrolladora = document.getElementById('btn-desarrolladora');
 const btnMapa = document.getElementById('btn-visual');
+const btnIndex = document.getElementById('btn-index');
 const ayuda = document.getElementById('ayuda');
 const infoDesarrolladora = document.getElementById('info-desarrolladora');
 
-// Función para ocultar todos los paneles menos el que quieres mostrar
+// Función para ocultar todos los paneles menos el que quieres mostrar 
 function togglePanel(panel) {
   [ayuda, infoDesarrolladora].forEach(p => {
     if (p === panel) {
@@ -403,10 +404,13 @@ btnAyuda.addEventListener('click', () => {
 btnDesarrolladora.addEventListener('click', () => {
   togglePanel(infoDesarrolladora);
 });
-
-btnMapa.addEventListener('click', () => {
+btnIndex.addEventListener('click', () => {
   window.location.href = 'index.html';
 });
+btnMapa.addEventListener('click', () => {
+  window.location.href = 'glosario.html';
+});
+
         // Initialize the concept map
         document.addEventListener('DOMContentLoaded', () => {
             renderConceptMap();
@@ -415,7 +419,7 @@ btnMapa.addEventListener('click', () => {
             // Auto-select a starting concept
             setTimeout(() => {
                 selectConcept('sintesis-grafica');
-            }, 500);
+            }, 2000);
         });
 
         // Render the concept map
