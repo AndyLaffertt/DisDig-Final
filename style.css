@@ -175,7 +175,7 @@ body {
 
 /* === REINICIAR BOTÓN === */
 #reiniciar {
-  position: absolute;
+  position: fixed;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
@@ -186,7 +186,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  z-index: 1000;
+  z-index: 100;
   transition: opacity 0.3s ease;
 }
 
