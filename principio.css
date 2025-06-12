@@ -1,0 +1,149 @@
+/* Estructura general */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #F9F9F9;
+  color: #2B2B2B;
+}
+
+header {
+  background: #264653;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
+p.subtitulo {
+  margin-top: 0;
+  font-style: italic;
+  color: #E9ECEF;
+}
+
+.seccion-explicacion, .seccion-enlaces, .galeria {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Cards de navegación */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #E0E0E0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #264653;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #2A9D8F;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background: #21867A;
+}
+
+/* Carruseles */
+.galeria {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carrusel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+.carrusel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrusel img {
+  width: 200px;
+  height: auto;
+  margin-right: 16px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.carrusel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2A9D8F;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+
+.carrusel .prev { left: 0.5rem; }
+.carrusel .next { right: 0.5rem; }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dots span {
+  height: 10px;
+  width: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dots span.active {
+  background-color: #2A9D8F;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #264653;
+  color: white;
+  margin-top: 2rem;
+}

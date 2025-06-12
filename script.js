@@ -1,107 +1,107 @@
 const cartas = [
   {
     nombre: "Accesibilidad",
-    ilustracion: "ilustracion-accesibilidad.svg",
+    ilustracion: "recursos/cartas/accesibilidad.png",
     definicion: "Diseño de interfaces que pueden ser utilizadas por personas con distintas capacidades.",
-    ejemploImg: "ejemplo-accesibilidad.svg",
+    ejemploImg: "recursos/icons/ic_wcag.png",
     ejemploTexto: "Un sitio con navegación por teclado y alto contraste."
   },
   {
     nombre: "Píxel",
-    ilustracion: "ilustracion-pixel.svg",
+    ilustracion: "recursos/cartas/pixel.png",
     definicion: "Unidad más pequeña de una imagen digital; representa un punto de color.",
-    ejemploImg: "ejemplo-pixel.svg",
+    ejemploImg: "recursos/icons/manzana.png",
     ejemploTexto: "Pantallas con más píxeles por pulgada se ven más nítidas."
   },
   {
     nombre: "Interfaz Gráfica de Usuario (GUI)",
-    ilustracion: "ilustracion-accesibilidad.svg",
+    ilustracion: "recursos/cartas/GUI.png",
     definicion: "Zona media que permite a los usuarios interactuar con dispositivos mediante elementos gráficos.",
-    ejemploImg: "ejemplo-accesibilidad.svg",
+    ejemploImg: "recursos/icons/ic_gui.png",
     ejemploTexto: "Windows o macOS."
   },
   {
     nombre: "Metáfora del escritorio",
-    ilustracion: "ilustracion-pixel.svg",
+    ilustracion: "recursos/cartas/escritorio.png",
     definicion: "Metáfora empleada que simula un escritorio en el computador para facilidad del usuario.",
-    ejemploImg: "ejemplo-pixel.svg",
+    ejemploImg: "recursos/icons/ic_escritorio.png",
     ejemploTexto: "Las carpetas, archivos y la forma en la que está organizada la pantalla."
   },
   {
     nombre: "Responsive Design",
-    ilustracion: "ilustracion-accesibilidad.svg",
+    ilustracion: "recursos/cartas/Responsive.png",
     definicion: "Diseño que adapta contenido a distintos tamaños de pantalla.",
-    ejemploImg: "ejemplo-accesibilidad.svg",
+    ejemploImg: "recursos/icons/ic_responsive.png",
     ejemploTexto: "Sitio de Amazon que se ajusta a cualquier dispositivo."
   },
   {
     nombre: "Skeumorfismo",
-    ilustracion: "ilustracion-pixel.svg",
+    ilustracion: "recursos/cartas/Skeumorphim.png",
     definicion: "Diseño que imita objetos reales.",
-    ejemploImg: "ejemplo-pixel.svg",
+    ejemploImg: "recursos/icons/ic_boton.png",
     ejemploTexto: "Antiguo iOS con iconos de vidrio y relieves.."
   },
   {
     nombre: "User Experience (UX)",
-    ilustracion: "ilustracion-accesibilidad.svg",
+    ilustracion: "recursos/cartas/UX.png",
     definicion: "Experiencia global del usuario al interactuar con un producto/servicio.",
-    ejemploImg: "ejemplo-accesibilidad.svg",
+    ejemploImg: "recursos/icons/ic_UX.png",
     ejemploTexto: "Navegar por Netflix para ver películas."
   },
   {
     nombre: "SEO (Search Engine Optimization)",
-    ilustracion: "ilustracion-pixel.svg",
+    ilustracion: "recursos/cartas/SEO.png",
     definicion: "Técnicas para mejorar visibilidad en buscadores orgánicos.",
-    ejemploImg: "ejemplo-pixel.svg",
+    ejemploImg: "recursos/icons/ic_seo.png",
     ejemploTexto: "Uso de palabras claves, etiquetas en imágenes."
   },
   {
     nombre: "Metáfora Digital",
-    ilustracion: "ilustracion-accesibilidad.svg",
+    ilustracion: "recursos/cartas/metDig.png",
     definicion: "Uso de símbolos del mundo real para representar funciones digitales.",
-    ejemploImg: "ejemplo-accesibilidad.svg",
+    ejemploImg: "recursos/icons/ic_metDig.png",
     ejemploTexto: "Icono de 'papelera' para eliminar archivos."
   },
   {
     nombre: "Gamificación",
-    ilustracion: "ilustracion-pixel.svg",
+    ilustracion: "recursos/cartas/gamificacion.png",
     definicion: "Uso de mecánicas de juego (recompensas, niveles) en contextos no lúdicos.",
-    ejemploImg: "ejemplo-pixel.svg",
+    ejemploImg: "recursos/icons/ic_gamificacion.png",
     ejemploTexto: "Duolingo con puntos por aprender idiomas."
   },
   {
     nombre: "WCAG 2.0",
-    ilustracion: "ilustracion-accesibilidad.svg",
+    ilustracion: "recursos/cartas/wcag.png",
     definicion: "Pautas para hacer contenido web accesible (niveles A, AA, AAA).",
-    ejemploImg: "ejemplo-accesibilidad.svg",
+    ejemploImg: "recursos/icons/ic_wcag.png",
     ejemploTexto: "Texto con alto contraste para daltonismo."
   },
   {
     nombre: "Modelo RGB",
-    ilustracion: "ilustracion-pixel.svg",
+    ilustracion: "recursos/cartas/rgb.png",
     definicion: "Sistema de colores basado en luz (Rojo, Verde, Azul) para pantallas digitales.",
-    ejemploImg: "ejemplo-pixel.svg",
+    ejemploImg: "recursos/icons/ic_rgb.png",
     ejemploTexto: "Pantallas OLED que mezclan estos colores."
   },
     {
     nombre: "Usabilidad",
-    ilustracion: "ilustracion-pixel.svg",
+    ilustracion: "recursos/cartas/usabilidad.png",
     definicion: "Facilidad con que usuarios logran objetivos en un sistema.",
-    ejemploImg: "ejemplo-pixel.svg",
+    ejemploImg: "recursos/icons/ic_usabilidad.png",
     ejemploTexto: "Formulario de contacto simple en un sitio web."
   },
   {
     nombre: "Comunicación Visual",
-    ilustracion: "ilustracion-accesibilidad.svg",
+    ilustracion: "recursos/cartas/comvisual.png",
     definicion: "Todo elemento visual que es importante en el proceso comunicativo.",
-    ejemploImg: "ejemplo-accesibilidad.svg",
+    ejemploImg: "recursos/icons/ic_comvisual.png",
     ejemploTexto: "Fotografías, formas, ilustraciones, tipografía, colores, etc"
   },
   {
     nombre: "Síntesis gráfica",
-    ilustracion: "ilustracion-pixel.svg",
+    ilustracion: "recursos/cartas/lobo.png",
     definicion: "Busca el reducir los elementos visuales de un objeto y dejar solo lo escencial para sea reconocido.",
-    ejemploImg: "ejemplo-pixel.svg",
+    ejemploImg: "recursos/icons/ic_lobo.png",
     ejemploTexto: "Íconos"
   }
 ];
@@ -160,9 +160,13 @@ function crearCarta(carta, offset) {
   // Frente
   const front = document.createElement('div');
   front.classList.add('card-front');
-  const imgFront = document.createElement('img');
+/*  const imgFront = document.createElement('img');
   imgFront.src = carta.ilustracion;
-  front.appendChild(imgFront);
+  front.appendChild(imgFront);*/
+  front.style.backgroundImage = `url('${carta.ilustracion}')`;
+  front.style.backgroundSize = "cover";
+  front.style.backgroundPosition = "center";
+  front.style.backgroundRepeat = "no-repeat";
 
   // Dorso
   const back = document.createElement('div');
