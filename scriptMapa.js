@@ -380,15 +380,13 @@ const concepts = {
 
         };
 const btnAyuda = document.getElementById('btn-ayuda');
-const btnDesarrolladora = document.getElementById('btn-desarrolladora');
 const btnMapa = document.getElementById('btn-visual');
 const btnIndex = document.getElementById('btn-index');
 const ayuda = document.getElementById('ayuda');
-const infoDesarrolladora = document.getElementById('info-desarrolladora');
 
 // Función para ocultar todos los paneles menos el que quieres mostrar 
 function togglePanel(panel) {
-  [ayuda, infoDesarrolladora].forEach(p => {
+  [ayuda].forEach(p => {
     if (p === panel) {
       p.classList.toggle('oculto');
     } else {
@@ -399,10 +397,6 @@ function togglePanel(panel) {
 
 btnAyuda.addEventListener('click', () => {
   togglePanel(ayuda);
-});
-
-btnDesarrolladora.addEventListener('click', () => {
-  togglePanel(infoDesarrolladora);
 });
 btnIndex.addEventListener('click', () => {
   window.location.href = 'index.html';
